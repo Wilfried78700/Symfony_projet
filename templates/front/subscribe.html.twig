@@ -1,0 +1,40 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
+    <style>
+    .bg-image{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;}
+    .bg-size-half{background-size: 100%;}
+    .bg-position-top{background-position: top;}
+    </style>
+{% endblock %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block body %}
+
+    <div class="text-center">
+        <img src="{{ asset('images/logo_classic.png') }}" alt="">
+        <img src="{{ asset('images/alt_rh-removebg-preview.png') }}" alt=""><br>
+        <h1 class="m-4">Stage Developpeur Web</h1>
+        <hr>
+    </div>
+
+
+    <div class="bg-image bg-size-half bg-position-top img-fluid mt-4" style="background-repeat:no-repeat;background-image:url('Images/7mZSoOW - Imgur.png');height:80vh;">
+        <h2 class="text-center">Inscription pour accéder au <a href="" class="badge bg-success text-wrap fs-4 p-2 text-decoration-none text-white">Rapport de Stage</a> </h2>
+            <div class="col-6 mx-auto mt-5">
+
+                {{ form_start(formUser) }}
+        
+                    {{ form_widget(formUser) }}
+
+                <button class="btn bg-dark text-white d-block mx-auto mt-3">S'inscrire</button>
+
+                {{ form_end(formUser) }}
+            </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,290 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+<style>
+    .bg-image{
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            }
+    .img-fluid{
+            -webkit-box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 3px 3px 3px 3px rgba(0,0,0,0.63); 
+            box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 5px 5px 11px 3px rgba(0,0,0,0.63);
+        }
+    .sommaire{
+        display:flex;
+    }
+    @media screen and (max-width:768px){
+        .sommaire{
+            flex-direction: column;
+            width:100%;    
+        }
+        .intro{
+            margin-top:15%;
+            margin-left:15%;
+        }
+        .d-flex{
+            flex-direction: column;
+        }
+    }
+</style>
+
+{% endblock %}
+
+{% block title %}Mon stage{% endblock %}
+
+{% block body %}
+
+    <div class="text-center">
+        <img src="{{ asset('images/logo_classic.png') }}" alt="">
+        <img src="{{ asset('images/alt_rh-removebg-preview.png') }}" alt=""><br>
+        <h1 class="m-4">Stage Développeur Web</h1>
+        <hr>
+        <h2 class="text-center"><a href="" class="badge bg-success text-wrap fs-4 p-2 text-decoration-none text-white"style="">Rapport de Stage</a></h2>
+    </div>
+
+<div class="sommaire" id="sommaire" style="width:100%;">
+{% include "_sommaire.html.twig" %}
+
+    <div class="intro"style="width:85%;">    
+
+        <h3 class="text-decoration-underline" id="Introduction">I. Introduction</h3>
+            <h5 id="motivation"class="m-3 text-decoration-underline">1. Mes motivations</h5>
+
+            <p class="m-4"> 
+            Il y a un an et demi, j'ai commencé à m'intéresser au domaine numérique, notamment au
+            développement web.<br>
+
+            Youtube ou encore les cours en ligne de Pierre Giraud m'ont permis d'explorer et d'acquérir
+            des connaissances en HTML et CSS.<br>
+            Accompagné par Pôle Emploi, c'est ainsi que j'ai entamé ma reconversion professionnelle
+            vers un métier de « Développeur Web».<br>
+            Alt_rh, partenaire de Pôle Emploi m'a été proposé par ces derniers et proposait une
+            formation adaptée et complète.
+
+            
+            
+            <h5 id="pourquoi" class="m-3 text-decoration-underline">2.Pourquoi ce stage chez Datanumia?</h5>
+
+            <p class="m-4">
+            J'ai eu l'opportunité de réaliser mon stage au sein de Datanumia en faisant appel à mon entourage. <br>
+            Datanumia se situe dans un domaine d'activité qui est en total adéquation avec les métiers du Web : ce sont les principaux acteurs dans la transition numérique et énergétique en France et en Europe.<br> 
+            Au sein de cette entreprise, on peut y trouver des développeurs back-end et front-end, des architectes ou encore des designers. 
+            </p>
+
+
+        <div class="d-flex">
+        
+            <div class="float-start m-4">
+                <h5 class="text-decoration-underline">Lieux du Stage</h5>
+                    Les locaux de Datanumia se situe dans le quartier d'affaire de la Défense, à Courbevoie (92)
+                    <ul class="list-unstyled m-3">
+                        <li>Datanumia Immeuble Le Lafayette</li>
+                        <li>4, Place des Vosges - 92000 Courbevoie</li>
+                    </ul>
+            </div>
+        
+            <div class="float-end" style=""><img src="{{ asset('images/transports.png') }}" alt="" class="img-fluid w-75" style="max-width: 100%;height: auto;"></div> 
+
+        
+    </div><br>
+        <h5 class="text-decoration-underline m-4">Les conditions du stage</h5>
+            <p class="m-4"> Les horaires de travail sont de 9h à 12h et de 13h30 à 17h30. 
+            Datanumia a mis en place le télétravail à hauteur de 3 jours de télétravail et 2 jours obligatoires sur site.<br> 
+            A mon arrivée, on m'a remis les équipements suivants : </p>
+                <ul class="list-unstyled m-5">
+                    <li> Une Sacoche</li>
+                    <li>Un ordinateur portable Linux</li>
+                    <li>Une souris ergonomique</li>
+                    <li>Un Casque</li>
+                    <li>Une Carte d'accès aux locaux</li>
+                    <li>Une Carte de cantine</li>
+                </ul> 
+
+                        <h5 class="text-decoration-underline m-4">Les outils</h5>
+            <p class="m-4"> Durant le stage, différents outils ont été mis à ma disposition, ils sont indispensables pour participer à la vie de l'entreprise. </p>
+                <ul class="list-unstyled m-5">
+                    <li>Un Accès au VPN(AWS....)</li>
+                    <li>Un Accès à Jira</li>
+                    <li>Un Accès a Confluence</li>
+                    <li>Un Compte Microsoft Teams et Slack </li>
+                    <li>Une Adresse mail Datanumia</li>
+                </ul> 
+
+        <h3 class="text-decoration-underline" id="Déroulement">II. Déroulement du Stage</h3>
+            
+            <p class="m-4">Mon stage s'est déroulé au sein du Pôle Back-end uniquement car le Pôle Front-end est basé à Nantes. 
+                            Durant mes cours, j'ai pu constater que le back-end me semblait complexe et subtil.<br>  
+                            Par conséquent, cela m'a permis d'avoir une vision globale et complète, tels que :</p> 
+
+                            <ul class="list-unstyled m-5">
+                                <li>Les outils utilisés</li>  
+                                <li>Les méthodes de management</li> 
+                                <li>La gestion des crises suites à un incident ou un surcroît d'activité</li> 
+                                <li>Les tâches du quotidien</li> 
+                            </ul>      
+            
+
+            <h5 id="Backend"class="m-3 text-decoration-underline">1. Présentation des équipes back-end</h5>
+
+            <div class="m-4">
+
+            Datanumia dispose de 2 Pôles Back-end : 
+            
+            <ul class="list-unstyled m-3">
+                <li>BtoB:</li>
+                <li>BtoC:</li>
+            </ul>
+
+            Côté BtoB, les clients sont des professionnels tels que Cinéma CGR, les Centrales Nucléaires ou encore des foncières. Ce sont des clients en vente directe.<br>
+
+            En revanche, côté BtoC, les clients sont des commercialisateurs : EDF, Dalkia ou encore Enedis. Datanumia propose un service à ces commercialisateurs qui<br> 
+
+            Durant mon stage, j'ai intégré le Pôle Back-end du BtoC qui se nomme <span class="badge rounded-pill bg-success">« Equipes Solution »</span> .<br> 
+            
+            <span class="badge rounded-pill bg-success">« Equipes Solution »</span> est composée de 3 Teams :
+            
+            <ul class="list-unstyled m-3">
+                <li>TRUST:</li>
+                <li>AGIR:</li>
+                <li>WATTSON:</li>
+            </ul>
+            Chaque Team est composée de: 
+            <ul class="list-unstyled m-3">
+                <li>Un SCRUM Master :<br>Le Scrum Master aide à animer la mêlée (Scrum) pour l'équipe dans son ensemble en s'assurant que le framework Scrum est respecté.<br> Il s'engage à respecter les valeurs et les pratiques Scrum, mais doit également rester flexible et ouvert aux possibilités d'amélioration du workflow de l'équipe.</li><br>
+                <li>Un Product Owner :<br>Le Product Owner (PO) est un chef de projet en mode agile. Il est en charge de satisfaire les besoins des clients en menant à bien la livraison d'un produit de qualité.<br> Il sert d'interface entre l'équipe technique, l'équipe marketing et les clients. Au sein de son groupe de travail, il est le premier responsable de la conception du produit.</li><br>
+                <li>Un Lead Technique :<br>Le Lead Technique est à la fois un manager, un chef de projet technique et un développeur polyvalent.
+                    Il a plusieurs rôles mais le principal est de suivre l'étude et la conception de projets informatiques.</li><br>
+                <li>Un Testeur ou QA :<br>Le testeur en informatique est un spécialiste de la chasse aux bugs. Il repère les anomalies et les erreurs qui empêchent le bon fonctionnement d'un site web, d'une application informatique, etc. Pour se faire, il s'assure de l'adaptation du logiciel qu'il teste au cahier des charges et de la possibilité de son utilisation sur tout type de support informatique. Il vérifie également qu'il ne détériore pas l'appareil de l'utilisateur.</li><br>
+                <li>Un Développeur Senior :<br>Le développeur senior identifie les exigences des utilisateurs et des systèmes pour les nouveaux sites Web et les nouvelles applications. Il hierarchise des projets de développement de logiciel, définit le calendrier et l'attribution de tâches aux membres de l'équipe. </li><br>
+                <li>3 à 5 Développeurs :<br>Le développeur web (code rome M1805) travaille au sein d'une agence de communication, en freelance, en ESN ou directement en entreprise. Son but est de développer des interfaces web adaptées pour son client. Il peut s'agir de sites Intranet, de sites internet, d'applications web ou d'outils en ligne    </li><br>
+            </ul>
+                <div class="d-flex justify-content-center w-100">
+                    <div class="float-start h-25 w-50"><img src="{{ asset('images/SolutionNew.png') }}" alt="" class="img-fluid" style="max-width: 100%;height: auto;"></div><br>  
+                </div>
+
+
+
+
+
+            <h5 id="team" class="m-3 text-decoration-underline">2. Accueil dans les différentes teams</h5>
+
+            <div class="mt-5 text-center">
+            <h6 class="text-decoration-underline">Planning des jours travaillés:</h6>
+            <img src="{{ asset('images/Planning.png') }}" alt="" class="img-fluid" style="max-width: 100%;height: auto;">
+            </div>
+
+            <div class="m-4">
+            <h5 class="badge bg-primary">L'Equipe Trust</h5> <br>
+            J'ai passé les 3 premiers jours au sein de la Team Trust. J'ai été accueilli par la Scrum Master de l'Equipe, Zineb. <br>
+            <h6>1er jour :</h6> 
+            Zineb m'a convié à leur réunion quotidienne du matin : Le Daily.<br>  
+            Cette réunion a pour but de faire un état des lieux de la journée de la veille en synchronisant le travail de chacun. <br>
+            Cela permet également d'évoquer les points bloquants. <br>
+            Suite à cette réunion, Zineb m'explique que Datanumia travaille selon une des méthode « Agile » : Scrum.  <br>
+            Le Scrum est une des méthodes de gestion de projet Agile. Son objectif est d'améliorer la productivité des équipes agiles même à distance, tout en permettant une optimisation du produit grâce à des feedbacks réguliers. <br>
+            Cette méthode « Scrum » s'articule autour d'un PI Planning. <br>
+            Un PI Planning est un événement de deux jours qui couvre 8 à 12 semaines d'incrément de programme. À la fin de cette période, un autre événement de PI Planning est organisé et le processus se répète. <br>
+            Ce PI Planning est composé de 4 Sprint de 2 semaines qui rythment les activités des équipes par des tâches définis selon le besoin de l'entreprise. Il peut s'agir de développement d'une application, d'une fonctionnalité ou la résolution de bugs. <br>
+            Les sprints sont découpés en story quotidienne. Ces storys sont programmés et pilotés par la Scrum Master en collaboration avec l'ensemble de l'équipe. Elles correspondent aux tâches quotidiennes de chaque collaborateur. <br>
+            Ces storys sont planifiées dans l'outil « JIRA » via un tableau « Kanban » (tableau d'organisation japonais) <br><br>
+
+                <div class="text-center"><img src="{{asset('images/Agile.png')}}" alt="" class="img-fluid h-50 w-50" style="max-width: 100%;height: auto;"></div><br><br>
+
+            JIRA est un logiciel de suivi de projets et de gestion d'incidents.  
+            Cet outil permet également à l'équipe d'identifier les tâches dites prioritaires et de les intégrer au PI Planning. 
+            Les tâches dites prioritaires correspondent à des bugs. Les résolutions de bugs font partie intégrante de l'activité de l'équipe. 
+            L'intégration des résolutions d'incidents au PI Planning sont priorisé par l'ensemble de l'équipe selon la méthode « Scrum ». 
+            Cette approche s'organise autour de cycles courts, qu'on appelle communément des itérations. En langage Scrum, une itération se nomme un “sprint”. À chaque nouveau sprint, l'équipe projet se rassemble pour lister les tâches à exécuter.  
+            Cette liste s'appelle le “sprint backlog”. L'ensemble relève d'une logique de développement produit. C'est ce qui explique que la méthodologie Scrum se déploie autour d'acteurs spécifiques, comme le Product Owner. 
+            D'ailleurs, j'ai assisté aux réunions quotidiennes entre les Scrum Master et Product Owner. 
+            Les Scrum Master et Product Owner se réunissent quotidiennement. Il s'agit de courtes périodes d'échange, pendant lesquelles les membres de l'équipe projet communiquent sur leurs avancées et leurs difficultés. 
+            Par la suite, Zineb m'a expliqué les enjeux et objectifs de la Team « Trust » : Le développement des API selon les besoins des clients. 
+            La Team utilise un processus avec différentes étapes pour structurer et comprendre les besoins du client. 
+            Ce processus est réprésenté par le schéma suivant : <br><br>
+
+                <div class="text-center"><img src="{{asset('images/processus-validation.png')}}" alt="" class="img-fluid h-50 w-50" style="max-width: 100%;height: auto;"></div> <br><br>
+
+
+            Ma première matinée s'est écoulée ainsi.  
+
+
+            J'ai passé l'après-midi avec le Développeur Senior, Nabil et 2 Développeurs Web, Chafik et Man Yee afin que la théorie soit vu en pratique. 
+            Ils m'ont présenté les différents outils, langages et frameworks qu'ils utilisent : 
+            Datanumia travaille principalement avec Java. 
+            Ce langage ne faisant pas partie de mon cursus de formation.  
+            Par conséquent, je n'ai pas pu m'exercer sur leurs tâches. Cependant, les développeurs ont parcouru brièvement ce langage pour me le faire découvrir. 
+            Ils m'ont également montré, à tour de rôle, les mécanismes permettant de passer d'un environnement local à un environnement de production. 
+            Ensuite, Man Yee, Développeur Web, m'a présenté les phases de test à réaliser en amont des testeurs. Cette phase est primordiale au bon fonctionnement du service et du produit. <br><br>
+
+            <div class="d-flex">
+                <img src="{{ asset('images/pyramid.png') }}" alt="" class="m-4 img-fluid" style="max-width: 100%;height: auto;">
+                
+                <div class="w-50">
+
+                <h5 class="m-3 text-decoration-underline">On parle alors de pyramide des Tests:</h5>
+                <ul class="list-unstyled m-4">
+                    <li> Les tests unitaires ne peuvent trouver des erreurs logiques qu'au niveau le plus fondamental. Ils sont rapides et nécessitent très peu de ressources pour fonctionner.</li>
+                    <li> Les tests d'intégration vérifient que les services et les bases de données fonctionnent bien avec le code et les classes que vous avez écrits. Ils ne peuvent trouver des problèmes qu'aux interfaces où deux composants ou plus se rencontrent.</li>
+                    <li> Les tests E2E dépendent de la capacité de l'application complète à démarrer. Ce sont les types de tests les plus complets dont nous disposons et, par conséquent, ils nécessitent le plus de ressources informatiques et de temps pour s'exécuter.</li>
+                </ul>            
+
+
+                <h5 class="m-3 text-decoration-underline">Outils:</h5>
+
+                <ul class="list-unstyled m-4">
+                    <li>Test Unit : Protactor, Cypress </li>
+                    <li>Test Intégration : Springboot test</li>
+                    <li>Test End to end : Junit</li>
+                </ul>
+
+                </div>
+            </div><br>
+
+            <h6>2ème jour :</h6> 
+            Toujours avec l'équipe « Trust » sur site, j'ai assisté aux différentes réunions matinales :  
+
+            L'après-midi, j'ai été accompagné par le Testeurs (QA), Hassan. <br>
+            Cette demi-journée a été très enrichissante car cela m'a permis de comprendre les enjeux du métier de testeur dont je n'avais pas connaissance. <br> 
+            Il m'a expliqué le rôle et mission d'un testeur: 
+            
+            <ul class="list-unstyled m-4">
+                <li>Ecrire les tests en amont des développements</li>
+                <li>Valider les tests (et comportements) avant la validation finale de la user-storie</li>
+                <li>S'assurer que la Definition of Done est bien respectée par l'équipe de réalisation</li>
+                <li>Renforcer l'aspect user-centric en amenant l'équipe à plus travailler avec les utilisateurs</li>
+            </ul>
+
+            Pour pouvoir répondre à ces missions, Hassan utilise les outils suivants: 
+
+            <ul class="list-unstyled m-4">
+                <li>Git Bash</li>
+                <li>Cucumber</li>
+                <li>SQL</li>
+                <li>Cassandra</li>
+            </ul>
+
+            En fin de journée, j'ai été convié à une réunion avec les Architectes.
+            Cette réunion avait pour but de mutualiser les besoins et définir les priorités en fonction des activités de chacun. 
+            Le rôle de l'Architecte est de s'assurer du bon fonctionnement de l'API tout au long du développement. 
+
+            Exemple :  
+
+            Une simple modification liée à une anomalie réalisée sans concertation avec les <br> 
+            différentes équipes peut entraîner de lourdes conséquences au niveau de l'accessibilité à l'API pour des millions utilisateurs (interruption du service, fonctionnalités en anomalie majeures, …). <br><br>
+
+            </div>
+        </div>                    
+    </div>
+</div>       
+    
+
+    
+{% include "_pagination.html.twig" %}
+{% endblock %}
+
+
+
+
+
+

@@ -1,0 +1,119 @@
+            <h5 id="team" class="m-3 text-decoration-underline">2. Accueil dans les différentes teams</h5>
+
+            <div class="m-4">Mon premier jour de stage s'est déroulé sur site, je suis arrivé sur les lieux à 9h, j'ai visité les locaux avec une employée de l'entreprise, les bureaux se trouve sur deux étages (6e et 7e Etage). 
+            J'ai été accueilli par l'équipe Trust, dont la Scrum master est Zineb.
+            J'ai assisté à leur reunion quotidienne, qu'il nomme le Daily. 
+            Cette reunion leur permet de suivre quotidiennement le travail de chacun, à savoir qui en est ou, et à savoir si la dynamique est bonne afin de réaliser les objectifs définit au premier sprint.
+            La planification du sprint est une cérémonie Scrum qui lance le sprint. Elle a pour objectif de définir ce qui peut être livré dans le sprint et comment y parvenir. La planification du sprint est effectuée en collaboration avec toute l'équipe Scrum.
+            Les objectifs sont découpés en story quotienne. 
+            Cette reunion est en général piloté par le Scrum Master(Zineb) et le PO(Antoine).
+            Pour se faire il utilise un outil développé en interne, qui est un tableau Kanban("panneau" en japonais) permettant de planifier, d'organiser et de structurer leur travail, c'est un outil indispensable au bon développement et à la gestion des différentes anomalies.<br><br>
+            <div class="text-center"><img src="{{ asset('images/Agile.png') }}" alt="" class="img-fluid h-50 w-50" style="max-width: 100%;height: auto;"></div><br>
+            Cette outil leur permet de s'organiser en équipe et d'identifier les tâches qui demande une attention plus particulière voir prioritaire, et donc cela permet aux équipes d'avancer dans le bon sens sans se mettre des "batons dans les roues".
+            Ces différentes tâches sont catégorisés par un chiffre qui représente la hauteur de priorité. Tous ensemble, ils vont noter toutes ces tâches une à une afin de les placer du plus important au moins important.<br>
+            En effet ils utilisent une des principales méthodes Agile qui est la méthode SCRUM. C'est une méthode qui est souvent utilisée en entreprise pour la gestion de projets.<br>
+            Cette approche s'organise autour de cycles courts, qu'on appelle communément des itérations. En langage Scrum, une itération se nomme un “sprint”. À chaque nouveau sprint, l’équipe projet se rassemble pour lister les tâches à exécuter. Cette liste s’appelle le “sprint backlog”.
+            L'ensemble relève d'une logique de développement produit. C'est ce qui explique que la méthodologie Scrum se déploie autour d’acteurs spécifiques, comme le Product Owner. Des réunions Scrum ont d’ailleurs lieu quotidiennement. Il s’agit de courtes périodes d’échange, 
+            pendant lesquelles les membres de l'équipe projet communiquent sur leurs avancées et leurs difficultés.<br><br>
+
+            J'ai ensuite été accompagnée par la SCRUM Master(Zineb), qui m'a expliqué les différents enjeux et objectifs de la Team Trust au sein de l'équipe Solution. 
+            Elle a commencé par m'expliqué le rôle de chacun au sein de la Team Trust, qui est bien résumé dans la présentation des équipes back-end. 
+            Puis nous sommes rentrés dans le vive du sujet, clairement l'équipe Trust s'occupe du développement des API(Offre de Service) en rapport direct avec les demandes et exigences des commercialisateurs(EDF,Enedis,SoWee).
+            Trust s'occupe de tout ce qui est en rapport avec les commercialisateurs qui sont clients de Datanumia, mais ils ne sont pas en lien avec les clients finaux. (personne naviguant sur l'interface).
+            Pour se faire la team utilise un processus avec différentes étapes pour arriver à la validation et au déploiement.<br> 
+            Représentez par ce schéma:<br><br>
+            
+            <div class="text-center"><img src="{{ asset('images/processus-validation.png') }}" alt="" class="img-fluid h-50 w-50" style="max-width: 100%;height: auto;"></div><br>
+
+            Suite a cette entretien très enrichissant avec la SCRUM Master, elle m'a ensuite invité à rejoindre le développeur senior(nabil) et des développeurs(chafik,man yee), afin que la théorie soit vu en pratique.
+            J'ai passé l'après-midi avec eux, ou ils m'ont montrés a tour de role les différents mécanismes permettant de passer d'un environnement local à un environnement de production.
+            Ils m'ont surtout présenté les différents outils,langages et frameworks utilisés au quotidien.<br>
+            L'équipe utilise principalement du Java, langage que nous n'avons pas abordé durant la formation ce qui a forcément compliqué les choses pour que je réalise des tâches précises au sein de l'entreprise. 
+            Mais cela ne m'a pas découragé du coup je me suis dis que j'allais réalisé un site avec les outils que j'ai vu durant la formation, permettant au formateur de voir mon évolution, et prouver que je suis déterminé à en faire mon métier.
+
+            Ensuite Man yee m'a pris en main et m'a montré les différentes phases de tests que le développeur doit réaliser avant meme d'envoyer sa partie au testeur.
+            Elle m'a surtout alerté sur le processus, l'importance des étapes à suivre et les outils utilisés. <br><br>
+
+            <div class="d-flex">
+                <img src="{{ asset('images/pyramid.png') }}" alt="" class="m-4 img-fluid" style="max-width: 100%;height: auto;">
+                
+                <div class="w-50">
+
+                <h5 class="m-3 text-decoration-underline">On parle alors de pyramide des Tests:</h5>
+                <ul class="list-unstyled m-4">
+                    <li> Les tests unitaires ne peuvent trouver des erreurs logiques qu'au niveau le plus fondamental. Ils sont rapides et nécessitent très peu de ressources pour fonctionner.</li>
+                    <li> Les tests d'intégration vérifient que les services et les bases de données fonctionnent bien avec le code et les classes que vous avez écrits. Ils ne peuvent trouver des problèmes qu'aux interfaces où deux composants ou plus se rencontrent.</li>
+                    <li> Les tests E2E dépendent de la capacité de l'application complète à démarrer. Ce sont les types de tests les plus complets dont nous disposons et, par conséquent, ils nécessitent le plus de ressources informatiques et de temps pour s'exécuter.</li>
+                </ul>            
+
+
+                <h5 class="m-3 text-decoration-underline">Outils:</h5>
+
+                <ul class="list-unstyled m-4">
+                    <li>Test Unit : Protactor, Cypress </li>
+                    <li>Test Intégration : Springboot test</li>
+                    <li>Test End to end : Junit</li>
+                </ul>
+
+                </div>
+            </div><br>
+            Le Mardi j'étais une fois de plus sur site, j'ai participé aux différentes réunions matinales, puis j'ai passé le début d'après-midi avec le QA(Hassan) de le la Team.
+            Après une bonne pause déjeuner je l'ai rejoins afin qu'il me montre le travaille et les enjeux du métier de testeur. Ce qui a été très enrichissant pour moi car je ne pensais pas forcément a cette aspect du travail avant de commencer ce stage.<br>
+            Voici les tâches principales du QA en scrum:
+            
+            <ul class="list-unstyled m-4">
+                <li>Ecrire les tests en amont des développements</li>
+                <li>Valider les tests (et comportements) avant la validation finale de la user-storie</li>
+                <li>S’assurer que la Definition of Done est bien respectée par l’équipe de réalisation</li>
+                <li>Renforcer l’aspect user-centric en amenant l’équipe à plus travailler avec les utilisateurs</li>
+            </ul>
+
+            Pour se faire il utilise les outils:
+
+            <ul class="list-unstyled m-4">
+                <li>Git Bash</li>
+                <li>Cucumber</li>
+                <li>SQL</li>
+                <li>Cassandra</li>
+            </ul>
+
+            Pour finir la journée, j'ai assisté à une réunion avec les architectes de Datanumia, très intéressant de voir les échanges entre les différents parties.
+            A travers cette réunion j'ai pu voir la complexité des échanges, et comment chacun arrive a faire des compromis afin d'arriver a un résultat satistfaisant pour tout les parties.
+            Il est indispensable que l'architecture soit fonctionnelle afin d'anticiper et détailler le projet. Une simple anomalie liée a de simple modifications sans ces concertations peuvent avoir des conséquences grave sur la relation entre le client et le serveur.
+            Et donc créer des bugs sur la page web. Ce qui est impensable sachant qu'il y a des millions de clients qui circulent chaque jour sur le site.<br><br>
+
+            Le Mercredi j'étais en télétravail, j'ai d'abord assisté au PI.
+            On parle de Planification par incréments de programme, en d'autres termes cela leur permet à la team de poser les rails qui permettront à tous les wagons du train d'avancer dans la même direction.
+            J'ai ensuite passé la journée sur l'outil slack en partage d'ecran avec l'un des développeurs(Rachid) qui m'a donné des tips pour mon futur parcours de développeur, comment apréhender et préparer ces entretiens, et surtout comment se faire remarquer par des recruteurs.
+            Il a insisté sur l'importance de réaliser des travaux et de les rendre visible afin que les recruteurs aient un oeil direct sur mes compétences brut.
+            J'ai ensuite fais mes premières lignes de code en Java, il m'a surtout montré différents tests que je pourrais avoir a faire en entretien d'embauche.
+            Cette après-midi fut très enrichissante et construtive.<br><br>
+            
+            <div class="d-flex mt-5">
+            <div>
+            <h5 class="m-3 text-decoration-underline">TDD: Test Driven Development</h5>
+            « Test-Driven Development » est une méthode qui prône une nouvelle gymnastique de l’esprit et une nouvelle discipline : écrire le test avant le code de production. L'idée est donc de se fixer un objectif à atteindre en écrivant un test. Ce dernier permet de savoir quand s’arrêter de développer le comportement attendu. 
+            Dans un premier temps, le test sera rouge à l’exécution puisque le comportement du code correspondant n'existe pas encore. Attention la phase rouge ne veut pas dire que le code ne compile pas. On doit donc avoir créé manuellement ou généré via l’IDE la méthode à appeler. La deuxième phase correspond à écrire le minimum de code pour que le test passe au vert. 
+            Et enfin la factorisation du code permet de l'améliorer et d’obtenir une meilleure lisibilité et maintenabilité en troisième phase. On parle alors du cycle "Red Green Refactor" comme présenté dans l'image ci-dessous.
+            </div>
+            <img src="{{ asset('images/CycleTDD.png') }}" alt="" class="img-fluid h-25 w-25" style="max-width: 100%;height: auto;">
+            </div><br>
+
+            
+
+            Le Jeudi toujours en télétravail, j'ai été accueilli par une nouvelle équipe qui est la Team AGIR.
+            J'ai été accueilli par le SCRUM Master(Hakimou), il m'a rapidement mis dans le bain. On a enchainé avec le daily ou j'ai été présenté a l'équipe. 
+            La méthode Agile comme on a pu le voir pour la première Team est un élément clé pour le bon déroulement des évènements et surtout la cohésion d'équipe.
+            J'ai ensuite assisté à un refinement<br><br>
+
+            Le Vendredi toujours en télétravail, j'ai commencé la journée par un brief avec le SCRUM Master, qui m'a expliqué avec qui j'allais passer la journée.
+            Cette journée s'est donc déroulé avec le Recetteur Référent et Testeur de la Team(Raphaël). Contrairement au reste de l'équipe il est basé à Nantes.
+            Nous avons passés une heure à échanger, il m'a montré les difficultés qui lui arrive de rencontrer en autres, lorsqu'il n'a pas toutes les informations ou les réponses en temps et en heure pour pouvoir finir ces différentes phases de test.
+            Juste après on a enchainé avec un demo qu'il a réalisé pour toute la société. Cette demo a été réalisé sur Teams devant la majorité des collaborateurs ainsi que les commercialisateurs.
+            Impressionnant et intéressant de participer a ce genre d'évènement.<br>
+
+            Le Lundi de retour sur site, j'ai passé la journée avec le développeur senior(Mohamed) de la Team.<br>
+
+            Le Mardi de retour en télétravail, j'ai été accueilli par l'équipe WATTSON lors du daily, j'ai été présenté par la PO(Mathilde) à l'équipe. <br>
+
+            Le Mercredi séminaire de l'entreprise, nous avons été conviés 

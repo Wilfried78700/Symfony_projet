@@ -1,0 +1,164 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+<style>
+    .img-fluid{
+            -webkit-box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 3px 3px 3px 3px rgba(0,0,0,0.63); 
+            box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 5px 5px 11px 3px rgba(0,0,0,0.63);
+        }
+    .sommaire{
+        display:flex;
+    }
+    @media screen and (max-width:768px){
+        .sommaire{
+            flex-direction: column;
+            width:100%;    
+        }
+        .intro{
+            margin-top:15%;
+            margin-left:15%;
+        }
+        .d-flex{
+            flex-direction: column;
+        }
+    }
+</style>
+
+{% endblock %}
+
+{% block title %}Mon stage{% endblock %}
+
+{% block body %}
+
+    <div class="text-center">
+        <img src="{{ asset('images/logo_classic.png') }}" alt="">
+        <img src="{{ asset('images/alt_rh-removebg-preview.png') }}" alt=""><br>
+        <h1 class="m-4">Stage Développeur Web</h1>
+        <hr>
+        <h2 class="text-center"><a href="" class="badge bg-success text-wrap fs-4 p-2 text-decoration-none text-white"style="">Rapport de Stage</a></h2>
+    </div>
+
+<div class="sommaire" id="sommaire" style="width:100%;">
+{% include "_sommaire.html.twig" %}
+
+
+
+    <div class="intro" style="width:85%;"> 
+
+            <h6>3ème jour:</h6> 
+            <p>Mon 3ème jour de stage s'est déroulé en télétravail. 
+            J'ai participé à une réunion de synchronisation du PI Planning. Cette réunion dure ½ journée. 
+            On parle alors de planification par incréments de programme. En d'autres termes, cela permet à la team de mettre en évidence la contribution d'autres équipes tels que l'équipe Wattson, l'équipe Design ou encore l'équipe Commerciale. 
+            Pour se faire, Datanumia utilise l'outil Miro (logiciel de tableau blanc virtuel collaboratif).<br><br>
+
+                <div class="text-center"><img src="{{ asset('images/miro.png') }}" alt="" class="img-fluid h-50 w-50 " style="max-width: 100%;height: auto;"></div><br>
+
+            L'Après-midi, j'ai été en binôme avec un autre développeur, Rachid. 
+
+            Celui-ci m'a conseillé sur les métiers de développeurs web et les débouchés. 
+            Cet entretien été très enrichissant pour moi. Il m'a expliqué l'importance de réaliser des travaux et de les rendre visible afin que les recruteurs aient un aperçu sur mes compétences brutes. 
+            Il m'a également proposé de réaliser le test dit « TDD » : Test Driven Development.
+            </p>
+            
+            <div class="d-flex mt-5">
+                <div class="h-25 w-50">
+                <h5 class="m-3 text-decoration-underline">TDD: Test Driven Development</h5>
+                    « Test-Driven Development » est une méthode qui prône une nouvelle gymnastique de l'esprit et une nouvelle discipline : écrire le test avant le code de production. L'idée est donc de se fixer un objectif à atteindre en écrivant un test. Ce dernier permet de savoir quand s'arrêter de développer le comportement attendu. 
+                    Dans un premier temps, le test sera rouge à l'exécution puisque le comportement du code correspondant n'existe pas encore. Attention la phase rouge ne veut pas dire que le code ne compile pas. On doit donc avoir créé manuellement ou généré via l'IDE la méthode à appeler. La deuxième phase correspond à écrire le minimum de code pour que le test passe au vert. 
+                    Et enfin la factorisation du code permet de l'améliorer et d'obtenir une meilleure lisibilité et maintenabilité en troisième phase. On parle alors du cycle "Red Green Refactor" comme présenté dans l'image ci-dessous.
+                </div>
+            <img src="{{ asset('images/CycleTDD.png') }}" alt="" class="img-fluid h-25 w-25 ms-4" style="max-width: 100%;height: auto;">
+            </div><br>
+
+            Par la suite, nous avons simulé un entretien d'embauche. Lors de cette simulation Rachid m'a présenté les différents « tâches tests » qui peuvent être demandées par un recruteur. 
+            Cela m'a permis d'exercer le langage Java. <br><br>
+
+
+            <h5 class="badge bg-dark text-white">L'Equipe Agir</h5> <br>
+            <h6>4ème jour :</h6>
+
+            Toujours en télétravail, j'ai débuté ma 4ème journée de stage avec une nouvelle Team : AGIR . 
+            J'ai été accueilli par Hakimou, le Scrum Master de la Team.  
+            Il m'a rapidement mis dans le bain en commençant par m'intégrer au Daily de l'équipe. 
+            Pour rappel, le Daily est le point de synchronisation quotidien des équipes. 
+            Durant cette réunion, je me suis présenté à l'ensemble de l'équipe. 
+            Puis, nous avons assisté à un « Refinement ». 
+            Le Backlog Refinement (ou Backlog Grooming) regroupe toute la Scrum Team (Development Team, Scrum Master et Product Owner)<br> 
+            afin de donner de la visibilité sur les Sprints à venir et le travail restant. <br><br>
+
+            <h6>5ème jour :</h6> 
+            Le vendredi s'est également déroulé en télétravail. 
+            Comme tous les matins, j'ai assisté au Daily. 
+            Par la suite, Raphaël qui est le Recetteur et Testeur référent de la Team a passé la journée avec moi. 
+            Il m'explique qu'il est basé à Nantes. 
+            En effet, une partie du Service SI est basée à Nantes.
+            Il m'a expliqué les points bloquants qu'il pouvait rencontrer dans ces missions : <br>
+                <ul class="list-unstyled m-3">
+                    <li>Le manque d'éléments</li>
+                    <li>Le délai de traitement des autres Teams</li>
+                </ul>
+
+            L'après-midi, j'ai assisté à une « Démo » qu'il faite à l'ensemble à de l'entreprise. 
+            Une démo est une démonstration d'un nouvel, outil ou logiciel, cela peut aussi être une nouvelle fonctionnalité.  
+            Les démos se font toutes les 2 semaines afin d'informer l'ensemble des collaborateurs et commercialisateurs des nouveaux changements. 
+            Des centaines de personnes sont conviés à cet évènement. <br><br>
+
+            <h6>6ème jour :</h6> 
+            Au 6ème jour, de retour sur site, j'ai débuté ma journée avec Mohamed, un développeur Senior. 
+            Je l'ai accompagné tout au long de la journée des missions : 
+                <ul>
+                    <li>Réunion</li>
+                    <li>Tâches Java</li>
+                </ul>
+
+            <h5 class="badge bg-light text-dark">L'Equipe WATTSON</h5>
+            <h6>7ème jour et 8ème jour :</h6>
+            De nouveau en télétravail, j'ai été accueilli dans la nouvelle équipe : WATTSON. 
+            Mathilde, une Product Owner m'a présenté l'équipe. Elle m'a expliqué le rôle d'un Product Owner au sein de Datanumia. 
+            Elle m'a expliqué les points bloquants de la Team et les différents leviers dont elle dispose pour débloquer les situations. <br><br>
+
+            <h6>9ème jour :</h6>
+            J'ai été en total autonomie pour commencer mon projet, et réaliser ce rapport de stage. <br><br>
+
+            <h6>10ème jour :</h6>
+
+            J'ai eu l'opportunité de participer au Séminaire de l'entreprise. 
+            Le Séminaire s'est déroulé à Boulogne-Billancourt. 
+            La matinée a été essentiellement animée par Thierry BROT, le PDG de Datanumia. 
+            Ce dernier a présenté ces vœux pour la nouvelle année et informant les collaborateurs de la vision de Datanumia pour cette nouvelle année. 
+            Cela a permis également de faire un bilan sur l'année passée. 
+            Cette matinée était forte en informations et échanges.
+            L'après-midi était rythmé par des activités de Team Building : 
+
+            <ul class="list-unstyled m-3">
+                <li>une fresque climatique : Une Fresque du Climat permet une prise de conscience vertigineuse des enjeux climatiques et de travailler sur ce qui peut être fait collectivement et individuellement</li>
+                <li>un escape-game</li>
+            </ul>
+
+
+            <h3 class=" text-decoration-underline" id="Conclusion" >III. Conclusion</h3>
+
+                <div class="">
+                Cette expérience au sein de Datanumia en plus du cursus de formation m'ont permis de confirmer mon choix de reconversion. 
+                J'ai pu constater que le métier de Développeurs Web est un domaine certes complexe mais attrayant. 
+                Le domaine du développement présente un large domaine d'activités en comptant de nombreux métiers. 
+                Le stage et ma formation m'ont permis d'explorer tous les métiers du développement. Cela m'a également aidé à mettre en lumière le process sur le développement d'un logiciel et fonctionnalité du début à la fin :
+                <ul class="list-unstyled m-3">
+                    <li>les outils utilisés </li>
+                    <li>les process mis en place </li>
+                    <li>les différentes méthodes mises en pratique </li>
+                    <li>la gestion des bases de données </li>
+                    <li>la création de fonctionnalités : se connecter à un outil, l'achat en ligne </li>
+                    <li>les différents langage : HTML, CSS, Java, Javascript, Vue.js, Git, MySQL, Php, Php orienté Objet, Symfony</li>
+                </ul>
+                Le stage chez Datanumia a été très enrichissant. Datanumia est une entreprise dans l'air du temps mais surtout elle est avant-gardiste dans la façon de développer ses API. 
+                </div>
+
+            </div><br><br>
+        </div>
+        </div>
+    </div>
+</div><br>
+
+{% include "_pagination.html.twig" %}
+{% endblock %}

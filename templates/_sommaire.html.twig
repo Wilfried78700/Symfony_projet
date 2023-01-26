@@ -1,0 +1,26 @@
+<div class="d-flex flex-column" style="height:150px;;width:15%;">
+  <h5 class="text-center text-decoration-underline">Sommaire</h5><br>
+  <div class="dropdown">
+  <a href="#Introduction"class="dropdown-toggle text-decoration-none text-dark" type="" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+    I.Introduction
+  </a>
+  <ul class="dropdown-menu" style="border:none;" aria-labelledby="dropdownMenu2">
+    <li><a href="{{path('app_stage', {'_fragment': 'motivation'})}}"class="dropdown-item">1. Motivations</a></li>
+    <li><a href="{{path('app_stage', {'_fragment': 'pourquoi'})}}" class="dropdown-item">2. Pourquoi ce stage chez Datanumia?</a></li>
+  </ul>
+  </div><br>
+  <div class="dropdown">
+  <a href="" class="dropdown-toggle text-decoration-none text-dark" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+    II.Le déroulement du stage
+  </a>
+  <ul class="dropdown-menu" style="border:none" aria-labelledby="dropdownMenu2">
+    <li><a href="{{path('app_stage', {'_fragment': 'Backend'})}}" class="dropdown-item">1. Présentation des équipes back-end</a></li>
+    <li><a href="{{path('app_stage', {'_fragment': 'team'})}}" class="dropdown-item">2. Accueil dans les différentes teams</a></li>>
+  </ul>
+  </div><br>
+  <div class="dropdown">
+  <a href="{{path('app_stage2', {'_fragment': 'Conclusion'})}}" class="text-decoration-none text-dark">
+    III.Conclusion
+  </a>
+  </div>
+</div>

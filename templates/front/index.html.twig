@@ -1,0 +1,92 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <style>
+        body{
+            background-color: #FFFF;
+        }
+        .img-fluid{
+            -webkit-box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 3px 3px 3px 3px rgba(0,0,0,0.63); 
+            box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 5px 5px 11px 3px rgba(0,0,0,0.63);
+        }
+            @media screen and (max-width:768px){
+        
+        .intro{
+            margin-top:15%;
+            margin-left:15%;
+        }
+        .d-flex{
+            flex-direction: column;
+        }
+        .quisommesnous{
+            flex-direction: column-reverse;
+        }
+    }
+    </style>
+{% endblock %}
+
+{% block title %} Bienvenue {% endblock %}
+
+{% block body %}
+
+<div class="text-center">
+
+<img src="{{ asset('images/logo_classic.png') }}" alt="">
+<img src="{{ asset('images/alt_rh-removebg-preview.png') }}" alt="">
+
+<h1 class="m-4">Stage Developpeur Web</h1>
+<hr>
+<h2 class="">Présentation de l'entreprise</h2>
+</div>
+
+<div>
+
+<h3 class="m-4 text-decoration-underline text-start">Pourquoi ce stage ?</h3>
+<p class="m-4">
+J’ai réalisé mon stage de Développeur Web au sein de Datanumia du 9 janvier au 19 janvier
+2023. <br>
+La technologie digitale et numérique est le cœur de métier de cette entreprise.
+De ce fait, cette expérience a été une grande opportunité pour moi. <br>
+Pour découvrir mon rapport de stage, merci de créer un compte : <a href="{{ path('app_subscribe') }}" class="badge bg-warning text-wrap text-decoration-none text-dark"> Inscription </a>   
+</p>
+
+</div>
+
+<div class="">
+
+<h3 class="m-4 text-decoration-underline text-start">Qu’est ce que Datanumia?</h3>
+<p class="m-4">
+Datanumia est une filiale du groupe EDF, née d’une fusion entre Edélia et Netseenergy en 2021. 
+
+Datanumia est composé de 190 collaborateurs qui ont pour but de « Permettre à chacun d’optimiser sa consommation énergétique et son empreinte carbone par la valorisation de la donnée ». 
+
+Les métiers de Datanumia inscrivent ainsi l’entreprise au cœur des deux transformations majeures de nos sociétés : la Transition Numérique et la Transition Energétique.<br>  
+
+L’histoire de Datanumia en quelques mots… </p>
+
+<div class="text-center"><img src="{{ asset('images/StoryData1.png')}}" alt="" class="img-fluid"></div>
+
+<div class="d-flex mt-5" id="quisommesnous">
+    <img src="{{ asset('images/quisommesnous.png')}}" alt="" class="m-4 img-fluid">
+    <div class="">
+    <h3 class="text-decoration-underline" style="margin-top:35%;">Quelle est la vision de l'entreprise ?</h3>
+    Datanumia souhaite permettre à chacun d'optimiser ses consommations énergétique en se positionnant dans le marché du management énergétique et le developpement digital.
+    </div>
+</div>    
+
+
+<div class="d-flex mt-5" id="directions">
+    <div class="m-4">
+        <h3 class="text-decoration-underline" style="margin-top:35%;">Quelles sont les directions choisies ?</h3>
+        Datanumia a mis en place 6 grandes directions permettant d'atteindre la vision souhaitée.
+    </div>
+
+
+<img src="{{ asset('images/lesdirections.png')}}" alt="" class="m-4 img-fluid">
+</div>
+
+
+</div>
+
+{% endblock %}
+
